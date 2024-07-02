@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./javascripts/index.js"></script>
+    <script src="./javascripts/adminVisibility.js"></script>
+
+
+    <title>BookWorm</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <a class="navbar-brand oval" href="/">BookWorm</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active oval" href="/">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link oval" href="books.html">Книги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link oval" href="authors.html">Автори</a>
+                </li>
+                <li class="nav-item admin">
+                    <a class="nav-link oval" href="/admin.html">Керування</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div>
+    <div class="p-5 text-center">
+        <h1 class="display-4">Ласкаво просимо до BookWorm</h1>
+        <p class="lead">Відкривайте, залишайте відгуки та діліться улюбленими книгами!</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Розпочати</a>
+    </div>
+
+    <div class="p-5 container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Останні відгуки</h2>
+                <p>Ознайомтесь з останніми відгуками нашої спільноти.</p>
+                <a class="btn btn-secondary" href="#" role="button">Детальніше &raquo;</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Популярні книги</h2>
+                <p>Дивіться найпопулярніші книги серед наших користувачів.</p>
+                <a class="btn btn-secondary" href="books.html" role="button">Детальніше &raquo;</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Приєднуйтесь до нас</h2>
+                <p>Зареєструйтесь, щоб почати ділитися своїми відгуками про книги.</p>
+                <a class="btn btn-secondary" href="account.html" role="button">Зареєструватися &raquo;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

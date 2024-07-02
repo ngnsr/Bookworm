@@ -1,0 +1,92 @@
+body {
+
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  background-color: #f5f7f5;
+}
+
+.navbar {
+  background-color: #f5f7f8;
+}
+
+header {
+  padding-top: 60px;
+}
+/*for admin page navbar*/
+.bg-color {
+  background-color: #c3c3c3;
+}
+
+form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.oval{
+  border-radius: 5px;
+}
+
+.wishlist-icon {
+  width: 32;
+  height: 32;
+}
+.wishlist-icon:hover {
+  background-color: #f5f7f5;
+}
+
+#AuthorDiv,
+#GenreDiv {
+  display: none;
+}
