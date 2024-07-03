@@ -25,17 +25,12 @@ class ReviewController {
 
             const review = await Review.create({ text, rating, BookId: book_id, UserId: user_id });
 
-            // const reviewsNumber = await Review.count({where: {BookId:book_id}})
+            const reviewsNumber = await Review.count({where: {BookId:book_id}})
 
-            // TODO: fix avg rating
             const book = await Book.findByPk(book_id, { transaction });
-
-            const newRating = parseFloat(book.rating) + parseFloat(rating);
-            let averageRating = newRating / 2;
-
-            if(parseFloat(book.rating) === 0){
-                averageRating = parseFloat(rating);
-            }
+            const oldAvg = parseFloat(book.rating);
+            const newRating = parseFloat(rating);
+            let averageRating = ((reviewsNumber - 1) * oldAvg + newRating)/reviewsNumber;
 
             await book.update({
                 rating: averageRating,
